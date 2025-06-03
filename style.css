@@ -1,0 +1,71 @@
+body {
+    background-color: #f8f9fa;
+    color: #000000;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  header {
+    background-color: #2a009c !important; 
+  }
+  
+  .logo {
+    width: 150px !important;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    color: #6c757d;
+  }
+  
+  .dark-mode {
+    background-color: #000000;
+    color: #f8f9fa;
+  }
+  
+  .dark-mode header,
+  .dark-mode footer {
+    background-color: #000;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .tatuagem-img {
+    max-width: 20%; 
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px; 
+    object-fit: cover;
+  }
+  
+  
+  js
+  
+  
+  const form = document.getElementById("form-contato");
+  const nome = document.getElementById("nome");
+  const email = document.getElementById("email");
+  const telefone = document.getElementById("telefone");
+  const estilo = document.getElementById("estilo");
+  const mensagem = document.getElementById("mensagem");
+  
+  form.addEventListener("submit", function (e) {
+    if (nome.value.length < 3) {
+      alert("Nome deve ter pelo menos 3 letras.");
+      e.preventDefault();
+    } else if (!email.value.includes("@")) {
+      alert("Email inválido.");
+      e.preventDefault();
+    } else if (telefone.value.length < 8) {
+      alert("Telefone inválido.");
+      e.preventDefault();
+    } else if (estilo.value.trim() === "") {
+      alert("Informe um estilo de tatuagem.");
+      e.preventDefault();
+    } else {
+      alert("Formulário enviado com sucesso!");
+    }
+  });
