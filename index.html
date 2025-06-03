@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linha Fina Tattoo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="bg-secondary text-dark py-4">
+  <div class="container d-flex align-items-center justify-content-between flex-wrap">
+   
+    <div>
+      <img src="LOGO preta.png" alt="Logo Linha Fina Tattoo" class="logo" style="width: 100px; height: auto;">
+    </div>
+
+  <div class="mx-auto text-center">
+      <h1 class="mb-1">Linha Fina Tattoo</h1>
+    </div>
+
+   <div style="width: 100px;"></div>
+  </div>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Início</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-4">
+    <section id="sobre" class="mb-5">
+      <h2>Sobre Nós</h2>
+      <p>Na Linha Fina Tattoo, a gente valoriza cada desenho como uma arte única. Trabalhamos  com muito cuidado e sempre priorizando a segurança e o conforto de quem vem até a gente.</p>
+      <div class="d-flex flex-wrap justify-content-between">
+      <img src="https://auroratattooart.com.br/wp-content/uploads/2023/06/linework.png" class="img-fluid rounded tatuagem-img">
+      
+      <img src="https://dicasparatattoo.com.br/wp-content/uploads/2018/12/alisha_lilali_tattoo006.png" class="img-fluid rounded tatuagem-img">
+      
+      <img src="https://auroratattooart.com.br/wp-content/uploads/2022/07/Foto-cover-up-tatuagem.jpeg" class="img-fluid rounded tatuagem-img">
+      </div>
+    </section>
+
+
+    <section id="servicos" class="mb-5">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Desenho personalizado</li>
+        <li>Fineline / Pontilhismo</li>
+        <li>Cover-up (reformar tatuagem antiga)</li>
+      </ul>
+    </section>
+
+    <section id="contato" class="mb-5">
+      <h2>Agende sua sessão</h2>
+
+      <form id="form-contato">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" required />
+        </div>
+        <div class="mb-3">
+          <label for="estilo" class="form-label">Estilo desejado</label>
+          <input type="text" class="form-control" id="estilo" required />
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Descrição da tatuagem desejada</label>
+          <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Linha Fina Tattoo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
